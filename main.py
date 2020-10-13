@@ -10,7 +10,7 @@ from flask_ngrok import run_with_ngrok
 from model import load_img, tensor_to_image, model
 
 
-DEBUG_PRINT = False or len(sys.argv)>1
+DEBUG_PRINT = False or sys.argv[1]=="True" or sys.argv[1]==True
 BUILD_PATH = "/content/build/build/"  #end with /
 UPLOAD_DIRECTORY = "/content/"
 
