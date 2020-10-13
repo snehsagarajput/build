@@ -1,6 +1,6 @@
 import time
 from flask import Flask, request, render_template, send_from_directory, redirect, send_file, make_response
-import os
+import os, sys
 from PIL import ImageEnhance
 import tensorflow_hub as hub
 import tensorflow as tf
@@ -10,7 +10,7 @@ from flask_ngrok import run_with_ngrok
 from model import load_img, tensor_to_image, model
 
 
-DEBUG_PRINT = False
+DEBUG_PRINT = False or len(sys.argv)>1
 BUILD_PATH = "/content/build/build/"  #end with /
 UPLOAD_DIRECTORY = "/content/"
 
@@ -34,7 +34,7 @@ def getImages():
         if DEBUG_PRINT:
             print("\n\nIn try block....\n\n")
         results = model(os.path.join(UPLOAD_DIRECTORY, "content.jpg"),
-                        os.path.join(UPLOAD_DIRECTORY, "style.jpg"))
+                        os.path.join(UPLOAD_DIRECTORY, "style.jpg"), DEBUG_PRINT)
         results.save(os.path.join(UPLOAD_DIRECTORY, "styled.jpg"))
         if DEBUG_PRINT:
             print("Success....Sending response")

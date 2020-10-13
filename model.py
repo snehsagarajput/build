@@ -3,7 +3,7 @@ import tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
 
-def load_img(path_to_img):
+def load_img(path_to_img ,DEBUG_PRINT=False):
     max_dim = 512
     img = tf.io.read_file(path_to_img)
     img = tf.image.decode_image(img, channels=3)
@@ -28,9 +28,9 @@ def tensor_to_image(tensor):
     return tensor  # PIL.Image.fromarray(tensor)
 
 
-def model(content_path, style_path):
-    content_image = load_img(content_path)
-    style_image = load_img(style_path)
+def model(content_path, style_path ,DEBUG_PRINT=False):
+    content_image = load_img(content_path ,DEBUG_PRINT)
+    style_image = load_img(style_path ,DEBUG_PRINT)
     if DEBUG_PRINT:
         print("Loading Model........")
     hub_module = hub.load(
