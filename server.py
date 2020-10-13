@@ -73,8 +73,8 @@ def _download_file(url):
 
 def start_ngrok(port):
     ngrok_address = _run_ngrok(port)
-    print(" *\033[92m Running on "+str(ngrok_address)+" \033[0m")
-    print("\033[93mClick the above URL to open webpage :) \033[0m")
+    print(" *\033[92m \033[1m Running on "+str(ngrok_address)+" \033[0m")
+    print("\033[1m Click the above URL to open webpage :) \033[0m")
 
 
 def run_with_ngrok(app):
