@@ -73,12 +73,8 @@ def _download_file(url):
 
 def start_ngrok(port):
     ngrok_address = _run_ngrok(port)
-    print(f" * Running on {ngrok_address}")
-    print(f" * Running on {ngrok_address}")
-    print(f" * Running on {ngrok_address}")
-    print(f" * Running on {ngrok_address}")
-    print(f" * Running on {ngrok_address}")
-    print("Click to open :)")
+    print(" *\033[92m Running on "+str(ngrok_address)+" \033[0m")
+    print("Click the above url to open :)")
 
 
 def run_with_ngrok(app):
@@ -91,8 +87,7 @@ def run_with_ngrok(app):
     old_run = app.run
 
     def new_run(*args, **kwargs):
-        port = kwargs.get('port', 5000)
-        thread = Timer(1, start_ngrok, args=(port,))
+        thread = Timer(1, start_ngrok, args=(5000,))
         thread.setDaemon(True)
         thread.start()
         old_run(*args, **kwargs)
