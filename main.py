@@ -12,7 +12,7 @@ from model import load_img, tensor_to_image, model
 
 DEBUG_PRINT = False or sys.argv[1]=="True" or sys.argv[1]==True
 BUILD_PATH = "/content/build/build/"  #end with /
-UPLOAD_DIRECTORY = "/content/"
+UPLOAD_DIRECTORY = "/content/sample_data/"
 
 
 app = Flask(__name__, static_folder= BUILD_PATH+'static/',
@@ -30,6 +30,8 @@ def getImages():
     file2 = request.files['style']
     file1.save(os.path.join(UPLOAD_DIRECTORY, "content.jpg"))
     file2.save(os.path.join(UPLOAD_DIRECTORY, "style.jpg"))
+    if os.path.exists(os.path.join(UPLOAD_DIRECTORY, "styled.jpg")):
+        os.remove(os.path.join(UPLOAD_DIRECTORY, "styled.jpg"))
     try:
         if DEBUG_PRINT:
             print("\n\nIn try block....\n\n")
