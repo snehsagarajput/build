@@ -6,7 +6,7 @@ import tensorflow_hub as hub
 import tensorflow as tf
 import numpy as np
 import sys
-from flask_ngrok import run_with_ngrok
+from server import run_with_ngrok
 from model import load_img, tensor_to_image, model
 
 
