@@ -9,6 +9,7 @@ import time
 import zipfile
 from pathlib import Path
 from threading import Timer
+import webbrowser
 
 import requests
 
@@ -73,6 +74,7 @@ def _download_file(url):
 def start_ngrok(port):
     ngrok_address = _run_ngrok(port)
     print(f" * Running on {ngrok_address}")
+    webbrowser.open_new_tab(ngrok_address, new=2)
 
 
 def run_with_ngrok(app):
