@@ -1,5 +1,4 @@
-from PIL import ImageEnhance
-import tensorflow as tf
+from PILimport tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
 
@@ -43,4 +42,4 @@ def model(content_path, style_path ,DEBUG_PRINT=False):
     if DEBUG_PRINT:
         print("Image Stylized......... :)")
         print("^_^")
-    return Image.fromarray(tensor_to_image(image), 'RGB')
+    return PIL.Image.fromarray(tensor_to_image(image), 'RGB')
