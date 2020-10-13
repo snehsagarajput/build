@@ -1,12 +1,11 @@
 import pkg_resources
-import os
 
 #packages available in colab's environment
 env_packages = [dist.project_name for dist in pkg_resources.working_set]
 
 #packages required by our requirement available or not
 #if not installed ,make a list of them
-required_packages = open(os.getcwd()+"/requirements.txt", "r")
+required_packages = open("/content/requirements.txt", "r")
 
 install_these = []
 
@@ -23,4 +22,4 @@ file = open("create_req_file.txt", "w")
 for package in install_these:
     file.write(package)
 
-!pip install -r create_req_file.txt
+
