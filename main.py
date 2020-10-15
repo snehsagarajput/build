@@ -70,7 +70,7 @@ def getImages():
                                    as_attachment=False)
     except Exception as e:
         if DEBUG_PRINT:
-            print ("\n\nIn except block....\n\nCheck for following error:)
+            print ("\n\nIn except block....\n\nCheck for following error:")
             print (e, file=sys.stderr)
         response = make_response('Some Error', 400)
         response.mimetype = 'text/plain'
