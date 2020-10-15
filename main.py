@@ -93,7 +93,7 @@ def imageList():
     imagesList = [name[:-1] for name in imagesList]
     f.close()
     if DEBUG_PRINT:
-        print imagesList
+        print (imagesList)
     return jsonify(data=imagesList)
 
 app.run()
