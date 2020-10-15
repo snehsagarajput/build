@@ -11,10 +11,10 @@ def generator():
     for r, d, f in os.walk(thisdir):
         for file in f:
             images.append(file)
-            print(file)
-
+            #print(file)
+    images.sort()
     #print("\n\nTotal Images : "+str(len(images))+"\n\n")
-
+    
     def itemName(item):
         name=""
         for i in item:
