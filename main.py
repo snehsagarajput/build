@@ -68,7 +68,7 @@ def getImages():
             print ('Success....Sending response')
         return send_from_directory(UPLOAD_DIRECTORY, 'styled.jpg',
                                    as_attachment=False)
-    except Exception, e:
+    except Exception as e:
         if DEBUG_PRINT:
             print ("\n\nIn except block....\n\nCheck for following error:)
             print (e, file=sys.stderr)
