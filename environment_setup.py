@@ -23,4 +23,6 @@ file = open("create_req_file.txt", "w")
 for package in install_these:
     file.write(package)
 
-
+#generate style images name list from Content Image folder
+from style_list_generator import generator
+generator()
