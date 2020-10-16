@@ -71,13 +71,14 @@ def getImages():
                         file2, DEBUG_PRINT)
         results.save(os.path.join(UPLOAD_DIRECTORY, 'styled.jpg'))
         if DEBUG_PRINT:
-            print ('Success....Sending response')
+            print('Sending Stylized Image :)\n\n')
         return send_from_directory(UPLOAD_DIRECTORY, 'styled.jpg',
                                    as_attachment=False)
     except Exception as e:
         if DEBUG_PRINT:
-            print ("\n\nIn except block....\n\nCheck for following error:")
-            print (e, file=sys.stderr)
+            print("\n\nIn except block....\n\nCheck for following error:")
+            print(e, file=sys.stderr)
+            print("\n\n")
         response = make_response('Some Error', 400)
         response.mimetype = 'text/plain'
         return response

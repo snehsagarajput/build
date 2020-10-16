@@ -63,9 +63,6 @@ def model(content_path, style_path, DEBUG_PRINT=False):
     image = tf.squeeze(stylized_image, axis=0)
     if DEBUG_PRINT:
         print('Image Stylized......... :)')
-        print('^_^\n')
-        print('^_^\n')
-        print('^_^\n')
     return PIL.Image.fromarray(tensor_to_image(image), 'RGB')
 
 
