@@ -27,7 +27,7 @@ Neural style transfer is an optimization technique used to take two images—a c
 
 ### Setting up Dev
 
-Required setup is provided in the Colab Notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://bit.ly/nst-tf) but for developing the project further follow the commands in colab environment:
+Required setup is provided in the Colab Notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://bit.ly/nst-tf) but for developing the project further follow the below commands in colab environment:
 
 ```shell
 !git clone https://github.com/snehsagarajput/nst-app # Clone the Repo
@@ -48,12 +48,12 @@ It will print the ngrok.io extended URL for the Web-App.
 ## Web-App Interface
 
 # <img src="https://i.ibb.co/Qf2NhR7/Interface.png" alt="WebApp Interface" align="right">
-
+#
 ## Licensing
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Sneh Sagar - [_snehsagarajput@gmail.com_](mailto:snehsagarajput@gmail.com)
+Sneh Sagar - [_snehsagarajput@gmail.com_](snehsagarajput@gmail.com)
 
 Project Link: [https://github.com/snehsagarajput/nst-app](https://github.com/snehsagarajput/nst-app)
