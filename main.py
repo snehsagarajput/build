@@ -27,16 +27,22 @@ import tensorflow_hub as hub
 import tensorflow as tf
 import numpy as np
 import sys
+import logging
 from server import run_with_ngrok
 from model import load_img, tensor_to_image, model
 
 DEBUG_PRINT = False or sys.argv[1] == 'True' or sys.argv[1] == True
-BUILD_PATH = '/content/build/build/'  # end with /
+DEBUG_LOGGING = False
+BUILD_PATH = '/content/nst-app/build/'  # end with /
 UPLOAD_DIRECTORY = '/content/sample_data/'
-repo = '/content/build/'
+repo = '/content/nst-app/'
 
 app = Flask(__name__, static_folder=BUILD_PATH + 'static/',
             template_folder=BUILD_PATH)
+
+if not DEBUG_LOGGING:
+    log = logging.getLogger('werkzeug')
+    log.disabled = True
 
 run_with_ngrok(app)
 
@@ -92,9 +98,7 @@ def imageList():
     imagesList = f.readlines()
     imagesList = [name[:-1] for name in imagesList]
     f.close()
-    if DEBUG_PRINT:
-        print (imagesList)
-    return jsonify(data=imagesList)
+    return jsonify(data=imagesList[::-1])
 
 app.run()
 
