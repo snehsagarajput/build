@@ -5,12 +5,7 @@
 Neural Style Transfer Model
 '''
 
-#######################################################################
-#                                                                     #
-#                *** CREDITS TO THE ORIGINAL AUTHOR ***               #
-#   https://github.com/gstaff/flask-ngrok/blob/master/flask_ngrok.py  #
-#                                                                     #
-#######################################################################
+
 
 __author__ = 'Sneh Sagar'
 __copyright__ = None
@@ -41,7 +36,7 @@ def load_img(path_to_img, DEBUG_PRINT=False):
     img = tf.image.resize(img, new_shape)
     img = img[tf.newaxis, :]
     if DEBUG_PRINT:
-        print('Load Success from ' + path_to_img + ' success')
+        print('Loading Image from ' + path_to_img + ' Success')
     return img
 
 

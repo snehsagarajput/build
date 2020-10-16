@@ -6,6 +6,13 @@ Ngrok Tunneling which exposes local servers behind NATs
 and firewalls to the public internet over secure tunnels.
 '''
 
+#######################################################################
+#                                                                     #
+#                *** CREDITS TO THE ORIGINAL AUTHOR ***               #
+#   https://github.com/gstaff/flask-ngrok/blob/master/flask_ngrok.py  #
+#                                                                     #
+#######################################################################
+
 __author__ = 'Sneh Sagar'
 __copyright__ = None
 __credits__ = ['Sneh Sagar']
@@ -95,7 +102,7 @@ def _download_file(url):
 def start_ngrok(port):
     ngrok_address = _run_ngrok(port)
     print(" *\033[92m Running on "+str(ngrok_address)+" \033[0m")
-    print("\033[1m Click the above Green URL to open webpage :) \033[0m")
+    print("\033[1m Click the above BLUE URL to open webpage :) \033[0m")
 
 
 def run_with_ngrok(app):

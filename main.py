@@ -66,9 +66,9 @@ def getImages():
                              req['styleDropdown'])
     try:
         if DEBUG_PRINT:
-            print("In try block....")
+            print("Starting Process......")
         results = model(os.path.join(UPLOAD_DIRECTORY, 'content.jpg'),
-                        file2)
+                        file2, DEBUG_PRINT)
         results.save(os.path.join(UPLOAD_DIRECTORY, 'styled.jpg'))
         if DEBUG_PRINT:
             print ('Success....Sending response')
