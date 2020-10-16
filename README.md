@@ -1,1 +1,1 @@
-# nst-app
+# Neural Style Transfer WebApp
