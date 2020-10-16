@@ -45,9 +45,15 @@ Debug = False # Print the logs = Off
 
 It will print the ngrok.io extended URL for the Web-App.
 
-## Web-App
+## Web-App Interface
 
 # <img src="https://i.ibb.co/Qf2NhR7/Interface.png" alt="WebApp Interface" align="right">
 
 ## Licensing
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Sneh Sagar - [_snehsagarajput@gmail.com_](mailto:snehsagarajput@gmail.com)
+
+Project Link: [https://github.com/snehsagarajput/nst-app](https://github.com/snehsagarajput/nst-app)
