@@ -1,3 +1,24 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+'''
+Ngrok Tunneling which exposes local servers behind NATs
+and firewalls to the public internet over secure tunnels.
+'''
+
+__author__ = 'Sneh Sagar'
+__copyright__ = None
+__credits__ = ['Sneh Sagar']
+__license__ = 'GPL'
+__version__ = '1.0.1'
+__email__ = 'snehsagarajput@gmail.com'
+__status__ = 'Production'
+
+
+
+
+
+
 import atexit
 import json
 import os
