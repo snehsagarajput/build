@@ -5,6 +5,13 @@
 Neural Style Transfer Model
 '''
 
+#######################################################################
+#                                                                     #
+#                *** CREDITS TO THE ORIGINAL AUTHOR ***               #
+#   https://github.com/gstaff/flask-ngrok/blob/master/flask_ngrok.py  #
+#                                                                     #
+#######################################################################
+
 __author__ = 'Sneh Sagar'
 __copyright__ = None
 __credits__ = ['Sneh Sagar']
