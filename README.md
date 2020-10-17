@@ -14,7 +14,7 @@ Neural style transfer is an optimization technique used to take two images—a c
 
 [Google Colab](https://colab.research.google.com/) provides the virtual environment to run a Flask based Web-App which is tunneled to Internet with the help of [Ngrok](https://ngrok.com/). **A Bare Minimum Setup :wink:**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://bit.ly/nst-tf)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snehsagarajput/nst-app/blob/master/nst_app.ipynb)
 
 ## Developing
 
@@ -27,7 +27,7 @@ Neural style transfer is an optimization technique used to take two images—a c
 
 ### Setting up Dev
 
-Required setup is provided in the Colab Notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://bit.ly/nst-tf) but for developing the project further follow the below commands in colab environment:
+Required setup is provided in the Colab Notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snehsagarajput/nst-app/blob/master/nst_app.ipynb) but for developing the project further follow the below commands in colab environment:
 
 ```shell
 !git clone https://github.com/snehsagarajput/nst-app # Clone the Repo
@@ -54,6 +54,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Sneh Sagar - [_snehsagarajput@gmail.com_](snehsagarajput@gmail.com)
+Sneh Sagar - [_snehsagarajput@gmail.com_]()
 
 Project Link: [https://github.com/snehsagarajput/nst-app](https://github.com/snehsagarajput/nst-app)
