@@ -48,7 +48,7 @@ It will print the ngrok.io extended URL for the Web-App.
 
 ## Web-App Interface
 
-# <img src="https://i.ibb.co/Qf2NhR7/Interface.png" alt="WebApp Interface" align="right">
+# <img src="out.gif" alt="WebApp Interface" align="right">
 #
 ## Licensing
 Distributed under the MIT License. See `LICENSE` for more information.
