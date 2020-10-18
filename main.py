@@ -52,7 +52,9 @@ if DEBUG_PRINT:
 hub_module =  hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2')
 if DEBUG_PRINT:
     print('Model Loaded Successfully')
+    
 
+print("\nStarting WebApp :) \n")
 
 @app.route('/')
 def index():
