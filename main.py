@@ -47,6 +47,13 @@ if not DEBUG_LOGGING:
 run_with_ngrok(app)
 
 
+if DEBUG_PRINT:
+    print('Loading Model........')
+hub_module =  hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2')
+if DEBUG_PRINT:
+    print('Model Loaded Successfully')
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -67,7 +74,7 @@ def getImages():
     try:
         if DEBUG_PRINT:
             print("Starting Process......")
-        results = model(os.path.join(UPLOAD_DIRECTORY, 'content.jpg'),
+        results = model(hub_module, os.path.join(UPLOAD_DIRECTORY, 'content.jpg'),
                         file2, DEBUG_PRINT)
         results.save(os.path.join(UPLOAD_DIRECTORY, 'styled.jpg'))
         if DEBUG_PRINT:

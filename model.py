@@ -49,15 +49,9 @@ def tensor_to_image(tensor):
     return tensor  # PIL.Image.fromarray(tensor)
 
 
-def model(content_path, style_path, DEBUG_PRINT=False):
+def model(hub_module, content_path, style_path, DEBUG_PRINT=False):
     content_image = load_img(content_path, DEBUG_PRINT)
     style_image = load_img(style_path, DEBUG_PRINT)
-    if DEBUG_PRINT:
-        print('Loading Model........')
-    hub_module = \
-        hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2')
-    if DEBUG_PRINT:
-        print('Model Loaded Successfully')
     stylized_image = hub_module(tf.constant(content_image),
                                 tf.constant(style_image))[0]
     image = tf.squeeze(stylized_image, axis=0)
