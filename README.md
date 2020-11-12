@@ -8,6 +8,7 @@ Neural style transfer is an optimization technique used to take two images—a c
 # <img src="https://i.ibb.co/GCNKxCy/example.jpg" alt="Example" align="right">
 
 <br></br><br></br><br></br>
+# Access
 ##### Check the Heroku Deployment Here : [https://nst-tf.herokuapp.com](https://nst-tf.herokuapp.com/) . 
 >Heroku Servers provide limited memory. So, server might crash after single use.
 #####                         OR
@@ -17,41 +18,20 @@ Neural style transfer is an optimization technique used to take two images—a c
 
 
 
-## Getting started
+## Getting started (Better way to access WebApp)
 
 Google Colab provides the virtual environment to run a Flask based Web-App which is tunneled to Internet with the help of Ngrok. **A Bare Minimum Setup :wink:**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snehsagarajput/nst-app/blob/master/nst_app.ipynb)
 All you have to do is to open the colab instance and run the only cell and you are ready to stylize the images.
-## Developing
 
-### Built With
+## Built With
 * [ReactJS](https://reactjs.org/)
 * [Tensorflow 2.0](https://www.tensorflow.org/overview/) 
 * [Open-CV](https://opencv.org/)
 * [Flask](https://palletsprojects.com/p/flask/)
 * [Ngrok](https://ngrok.com/)
 
-### Setting up Dev
-
-Required setup is provided in the Colab Notebook but for developing the project further follow the below commands in colab environment:
-
- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snehsagarajput/nst-app/blob/master/nst_app.ipynb)
-```shell
-!git clone https://github.com/snehsagarajput/nst-app # Clone the Repo
-!python /content/nst-app/environment_setup.py # List the missing Python libraries from requirements.txt if any
-!pip install -r /content/create_req_file.txt # Install the missing libraries
-```
-
-### Deploying / Publishing
-To host the Web-App on Internet through tunneling from LocalHost :
-
-```shell
-Debug = False # Print the logs = Off 
-!python /content/nst-app/main.py {Debug} # Deploying the Web-App
-```
-
-It will print the ngrok.io extended URL for the Web-App.
 
 ## Web-App Interface
 
