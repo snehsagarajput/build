@@ -12,7 +12,7 @@ Neural style transfer is an optimization technique used to take two images—a c
 ##### Check the Heroku Deployment Here : [https://nst-tf.herokuapp.com](https://nst-tf.herokuapp.com/) . 
 >Heroku Servers provide limited memory. So, server might crash after single use. Also, loading time is much higher.
 #####                         OR
-##### Better method to access the web-app is described [below](#getting-started).
+##### Better method to access the web-app is described [below](#getting-started-better-way-to-access-webapp).
 
 
 
