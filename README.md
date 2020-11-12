@@ -10,7 +10,7 @@ Neural style transfer is an optimization technique used to take two images—a c
 <br></br><br></br><br></br>
 # Access
 ##### Check the Heroku Deployment Here : [https://nst-tf.herokuapp.com](https://nst-tf.herokuapp.com/) . 
->Heroku Servers provide limited memory. So, server might crash after single use.
+>Heroku Servers provide limited memory. So, server might crash after single use. Also, loading time is much higher.
 #####                         OR
 ##### Better method to access the web-app is described [below](#getting-started).
 
@@ -37,6 +37,7 @@ All you have to do is to open the colab instance and run the only cell and you a
 
 # <img src="out.gif" alt="WebApp Interface" align="right">
 #
+
 ## Licensing
 Distributed under the MIT License. See `LICENSE` for more information.
 
