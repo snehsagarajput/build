@@ -2,17 +2,19 @@
 
 # Neural Style Transfer WebApp 
 ![last-commit](https://img.shields.io/github/last-commit/snehsagarajput/nst-app) ![repo-size](https://img.shields.io/github/repo-size/snehsagarajput/nst-app) ![lang-count](https://img.shields.io/github/languages/count/snehsagarajput/nst-app) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
-> WebApp for Tensorflow based Neural Style Transfer
+
 
 Neural style transfer is an optimization technique used to take two images—a content image and a style reference image (such as an artwork by a famous painter)—and blend them together so the output image looks like the content image, but “painted” in the style of the style reference image.
+# <img src="https://i.ibb.co/GCNKxCy/example.jpg" alt="Example" align="right">
 
+<br></br><br></br><br></br>
 ##### Check the Heroku Deployment Here : [https://nst-tf.herokuapp.com](https://nst-tf.herokuapp.com/) . 
 >Heroku Servers provide limited memory. So, server might crash after single use.
 #####                         OR
 ##### Better method to access the web-app is described [below](#getting-started).
 
 
-# <img src="https://i.ibb.co/GCNKxCy/example.jpg" alt="Example" align="right">
+
 
 
 ## Getting started
