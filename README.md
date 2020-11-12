@@ -17,10 +17,10 @@ Neural style transfer is an optimization technique used to take two images—a c
 
 ## Getting started
 
-[Google Colab](https://colab.research.google.com/) provides the virtual environment to run a Flask based Web-App which is tunneled to Internet with the help of [Ngrok](https://ngrok.com/). **A Bare Minimum Setup :wink:**
+Google Colab provides the virtual environment to run a Flask based Web-App which is tunneled to Internet with the help of Ngrok. **A Bare Minimum Setup :wink:**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/snehsagarajput/nst-app/blob/master/nst_app.ipynb)
-
+All you have to do is to open the colab instance and run the only cell and you are ready to stylize the images.
 ## Developing
 
 ### Built With
